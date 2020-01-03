@@ -121,6 +121,10 @@ and (orientation: portrait)
 
 /* Footer */
 
+.contact{text-align: center;}
+span, i{color: black;}
+
+
 .container2 {
   height: 50px;
 }
