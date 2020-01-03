@@ -8,121 +8,18 @@ body {
   padding-top: 56px;
 }
 
-.bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-/* Empresa */
-
-.navbar-brand {
-  font-family: "TulpenOne-Regular";
-  font-size: 35px;
-  letter-spacing: 5px;
-  font-weight: 900;
-}
-
-/*  Links */
-/* li a{font-family: "TulpenOne-Regular";font-size: 30px;} */
-
-/* h5 */
-h5 {
-  font-family: "TulpenOne-Regular";
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/* h5{font-family: "acuminBolderpro";} */
-
-
-
-
-
-
-.d-block {}
-
-/* #carouselExampleIndicators{display: flex;flex-direction: row;justify-items: center;} */
-
-#carouselExampleIndicators {
-
-
-  /* width: 500px; */
-  height: 450px;
-  box-sizing: content-box;
-
-}
-
-
-
-
-
-.carousel-inner img {
-  width: 100%;
-  border-radius: 20px;
-
-  max-height: 400px;
-
-
-}
-
-/* .carousel-indicators{margin-top: 50px;; } */
-
-
-
-.carousel-caption {
-  background-color: rgba(0, 78, 128, 0.6);
-  border-radius: 10px;
-}
-
-.carousel-inner {
-  width: 900px;
-  height: 400px;
-}
-
-
-
-
-#carouselExampleIndicators {
-  margin-bottom: 100px;
-  ;
-}
-
-/* #video-carousel-example{margin-top: 150px;;} */
-
-@media only screen and (min-device-width:320px)
-/* Horientacion Vertical */
-
-and (orientation: portrait)
-/* FIN */
-
-  {
-  .carousel-inner img {
-    width: 100%;
-    max-height: 460px;
-    border-radius: 10px;
-    ;
-  }
-
-  .carousel-inner {
-    height: 100%;
-    width: 100%;
-    padding: 5%;
-  }
-
-
-
-
-}
-
 
 
 /* Footer */
 
-.contact{text-align: center;}
-span, i{color: black;}
+.contact {
+  text-align: center;
+}
+
+span,
+i {
+  color: black;
+}
 
 
 .container2 {
@@ -286,6 +183,9 @@ span, i{color: black;}
   font-size: 1.5em;
 }
 
+
+/* Nuestro Codigo personalizado */
+
 /* Fuentes*/
 @font-face {
   font-family: 'TulpenOne-Regular';
@@ -314,4 +214,288 @@ span, i{color: black;}
     /* url(../fonts/opensans.otf) format('opentype'), */
     url(../Fonts/Acumin-BdPro.woff) format('woff');
   /* url(../fonts/opensans.woff) format('woff2');*/
+}
+
+.logo {}
+
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Empresa */
+
+.navbar-brand {
+  font-family: "TulpenOne-Regular";
+  font-size: 35px;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+/*  Links */
+/* li a{font-family: "TulpenOne-Regular";font-size: 30px;} */
+
+/* h5 */
+h5 {
+  font-family: "TulpenOne-Regular";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* h5{font-family: "acuminBolderpro";} */
+
+
+
+
+
+
+.d-block {}
+
+/* #carouselExampleIndicators{display: flex;flex-direction: row;justify-items: center;} */
+
+#carouselExampleIndicators {
+
+
+  /* width: 500px; */
+  height: 450px;
+  box-sizing: content-box;
+
+}
+
+
+
+
+
+.carousel-inner img {
+  width: 100%;
+  border-radius: 20px;
+
+  max-height: 400px;
+
+
+}
+
+/* .carousel-indicators{margin-top: 50px;; } */
+
+
+
+.carousel-caption {
+  background-color: rgba(0, 78, 128, 0.6);
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  width: 900px;
+  height: 400px;
+}
+
+
+
+
+#carouselExampleIndicators {
+  margin-bottom: 100px;
+  ;
+}
+
+
+
+/* Footer */
+
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+
+}
+
+.tarjetas {
+  margin-left: 20px;
+  ;
+}
+
+.oscuro {
+  background-color: #343a40;
+  height: 100px;
+  width: 100%;
+}
+
+.full {
+  border: black 1px solid;
+}
+
+.payments li {
+  margin-left: 10px;
+}
+div.footer-bottom div.container2 p {
+  margin: 0;
+}
+
+/* #video-carousel-example{margin-top: 150px;;} */
+/* Movil */
+@media only screen and (min-device-width:320px)
+/* Horientacion Vertical */
+
+and (orientation: portrait)
+/* FIN */
+
+  {
+  .carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+    border-radius: 10px;
+    ;
+  }
+
+  .carousel-inner {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .manos {
+    background-image: url(/Img/handshake-3962172_1920.jpg);
+    background-position: center;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .slide {
+    max-height: 200px;
+  }
+
+  /* Footer */
+  .oscuro {
+    background-color: #343a40;
+    height: 100px;
+    width: 100%;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+
+}
+
+/* Ipad Horizontal */
+@media only screen and (min-device-width:750px) and (max-device-width:1024px)
+/* Orientacion Horizontal */
+
+and (orientation: landscape) {
+  .wrapper {
+    height: 300px;
+  }
+
+  .logo {
+    height: 150px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+    ;
+  }
+
+  .carousel-inner {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+  }
+
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    ;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .payments {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .payments li {
+    margin-left: 10px;
+  }
+
+  div.footer-bottom div.container2 p {
+    margin: 0;
+  }
+
+  .full {
+    border: black 1px solid;
+  }
+
+  /* .ul-principal{margin-bottom: 30px;}
+.row{height: 230px;} */
+
+}
+
+/* Ipad Vertical */
+@media only screen and (min-device-width:768px) 
+and (orientation: portrait) {
+
+  .wrapper {
+    height: 300px;
+  }
+
+  .logo {
+    height: 150px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+    ;
+  }
+
+  .carousel-inner {
+    height: 350px;
+    width: 100%;
+    padding: 5%;
+    ;
+  }
+
+.manos{margin-top: 300px;}
+
+
+
+
+  div.footer-bottom div.container2 p {
+    margin: 0;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    width: 210px;
+    /* justify-content: center; */
+    ;
+  }
+
+
+
+
 }
