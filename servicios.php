@@ -79,7 +79,28 @@
         </div>
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9">
+      <div class="col-lg-9 repe">
+<!-- Carrousel -->
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        
 
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
@@ -93,7 +114,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card card-outline-secondary my-4">
+        <!-- <div class="card card-outline-secondary my-4">
           <div class="card-header">
             Product Reviews
           </div>
@@ -109,7 +130,7 @@
             <hr>
             <a href="#" class="btn btn-success">Leave a Review</a>
           </div>
-        </div>
+        </div> -->
         <!-- /.card -->
 
       </div>
@@ -120,18 +141,93 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+ 
+  
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <?php 
+//  Esto hara que se haga la conexion con la base de datos
+// primero localhost, luego root, dejamos vacio porque no hay contraseña
+// y por ultimo  EL NOMBRE DE LA BASE DE DATOS DE MYSQL
+// DONDE QUEREMOS COGER LA INFORMACIÓN
+	$conexion=mysqli_connect('localhost','root','','servicios');
+
+ ?>
+
+
+<?php 
+
+// Seleccionamos la tabla que queremos mostrar
+$sql="SELECT * from servicio";
+        // Esto no se toca
+		$result=mysqli_query($conexion,$sql);
+// Todo lo que lleve $nombre o lo que sea, es una variable en PHP
+    while($mostrar=mysqli_fetch_array($result)){?>
+    
+    <div class="col-lg-9 repe mx-auto">
+
+    <div class="card mt-4 mx-auto">
+          <img class="card-img-top img-fluid " src="http://placehold.it/900x400" alt="">
+          <div  class="card-body ">
+            <h3 class="card-title"><?php echo $mostrar['nombre'] ?></h3>
+          
+            <p class="card-text"><?php echo $mostrar['descripcion'] ?></p>
+            <h5>  <?php echo $mostrar['precio'] ?>€ </h5>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+          </div>
+        </div>
+
+
+        </div>
+
+
+        
+        <?php
+        }
+
+        ?>
+
+<!-- <script>
+Mostra les series (fa servir només javascript)
+function printSeries(listSeries){
+					document.querySelector("#list-series").innerHTML="<h1>Sèries disponibles</h1>";
+					listSeries.forEach(function(element){
+						let oSerie = element;
+						console.log("info serie:"+oSerie.id + " "+ oSerie.name);
+						let card = `<div>
+													<hr/>
+													<h5 class="card-title">${oSerie.name}</h5>
+													<p class="card-text">${oSerie.genre}</p>
+											 </div>
+											 `;
+						document.querySelector("#list-series").innerHTML+=card;
+					});
+			}
+
+			/* Equival a window.onload */
+			$(document).ready(function() {
+					getJSONVideos();
+
+			});
+
+
+
+
+
+
+</script> -->
+
+   <!-- Footer -->
+   <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 </body>
 
 </html>
